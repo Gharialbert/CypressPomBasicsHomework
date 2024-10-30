@@ -32,10 +32,6 @@ class LoginPage {
         cy.get(this.elements.loginRelatedOption).should('be.visible')
         cy.get(this.elements.loginRelatedOptionCart).should('be.visible')
     }
-
-    typeText(selector, text) {
-        cy.get(selector).type(text)
-    }
 }
 
 export default LoginPage
